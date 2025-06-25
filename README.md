@@ -16,4 +16,5 @@ Clean and consistent UI structure
 Practice project to strengthen frontend development skills
 
 🌐 Live Demo
-🔗
+🔗 https://bhavya-chellapandian.github.io/Udemy-Clone/
+
