@@ -14,6 +14,7 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
     gap: 15px;
@@ -54,6 +55,10 @@ body {
     justify-content: right;
     gap: 15px;
     width: 60%;
+}
+
+.navbar__menu {
+    display: none;
 }
 
 /*my learning popup */
@@ -154,7 +159,8 @@ body {
     border-radius: 30px;
     border: 1px;
     border-style: inset;
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
     height: 250px;
 
 }
@@ -244,4 +250,39 @@ body {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 20px;
+}
+
+/* media Queries */
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .cord-container__1,
+    .cord-container__2,
+    .cord-container__3,
+    .cord-container__4 {
+        flex-basis: 40%;
+    }
+
+    .catagories {
+        display: none;
+    }
+
+    .navbar__search,
+    .navbar__icons {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+
+    .navbar__menu img {
+        width: 20px;
+    }
 }
