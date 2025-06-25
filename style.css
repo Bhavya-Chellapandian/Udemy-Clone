@@ -55,6 +55,7 @@ body {
     gap: 15px;
     width: 60%;
 }
+
 /*my learning popup */
 .my-learning {
     position: relative;
@@ -85,10 +86,19 @@ body {
 
 .catagories p {
     background-color: #7b2bb4;
-    color: black;
+    color: white;
     border-radius: 30px;
     padding: 10px;
     margin-bottom: 10px;
+    border: #7b2bb4 solid 1px;
+}
+
+.catagories p:hover {
+    background-color: transparent;
+    color: black;
+    border: solid #7b2bb4 1px;
+    transition: 1s;
+
 }
 
 .sales img {
@@ -96,6 +106,7 @@ body {
     height: 400px;
     position: relative;
 }
+
 .sales__offer {
     position: absolute;
     top: 170px;
@@ -103,7 +114,25 @@ body {
     border: solid 1px black;
     padding: 2%;
     background-color: white;
+    animation-name: zoom;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
 .cord-container {
     margin-top: 10px;
     padding: 10px;
